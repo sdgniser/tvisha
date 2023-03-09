@@ -5,7 +5,7 @@ section {
 
     &#events h2 {
         font-size: 9rem;
-        margin: 50px 0 0 0;
+        margin: 50px 0 20px 0;
     }
 
     &#contact h2 {
@@ -24,6 +24,11 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .btn-primary {
+        padding: .5rem 1rem;
+        margin: 0 0 20px 0;
+    }
 
     .container {
         width: 70%;
@@ -60,10 +65,10 @@ section {
                 width: 100%;
                 padding: 20px;
                 transform: translateY(-70px);
-                background: linear-gradient( #0000 0%, $red 40%);
+                background: linear-gradient(#0000 0%, $red 40%);
                 transition: all .1s ease-in-out;
             }
-            
+
             .card-title {
                 font-family: 'Staatliches';
                 font-weight: 400;
@@ -113,12 +118,22 @@ section {
             }
         }
     }
-    #events .row .card{
-        .card-body {
-            transform: translateY(-60px);
+
+    #events {
+        .btn-primary {
+            font-size: 1.5rem;
+            padding: .2rem .5rem;
+            margin: 0 0 20px 0;
         }
-        .card-title {
-            font-size: 1.8rem;
+
+        .row .card {
+            .card-body {
+                transform: translateY(-60px);
+            }
+
+            .card-title {
+                font-size: 1.8rem;
+            }
         }
     }
 }
@@ -135,7 +150,7 @@ section {
     section {
         &#events h2 {
             font-size: 6rem;
-            margin: 50px 0 0 0;
+            margin: 50px 0 20px 0;
         }
 
         &#contact h2 {
@@ -158,19 +173,19 @@ section {
         .row {
             .card {
                 width: 75%;
-                margin: 0  0 20px 0;
+                margin: 0 0 20px 0;
 
                 img {
                     filter: blur(1px);
                 }
-            }            
+            }
 
             .card-body {
                 background: linear-gradient(#0000, $red 80%) !important;
                 transform: translateY(-100%) !important;
             }
 
-            .card:hover img{
+            .card:hover img {
                 background: $transparent-to-red;
                 transform: scale(1);
                 filter: blur(1px);
