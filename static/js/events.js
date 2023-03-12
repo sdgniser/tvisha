@@ -15,7 +15,7 @@ var modal = new tingle.modal({
 
 document.querySelectorAll('.card').forEach(card => {
     card.innerHTML += `<img class="card-expand" src="static/img/exp.svg"/> `
-    card.addEventListener('click', function () {
+    card.querySelector('.card-expand').addEventListener('click', function () {
         var img_url = card.querySelector('.banner').src
         modal.setContent(`<img src="${img_url}">`);
         modal.open();
